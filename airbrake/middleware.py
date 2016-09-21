@@ -3,7 +3,7 @@ from django.core.exceptions import MiddlewareNotUsed
 from airbrake.utils.client import Client
 
 class AirbrakeNotifierMiddleware(object):
-    def __init__(self):
+    def __init__(self, **kwargs):
         self.client = Client()
 
     def process_exception(self, request, exception):
