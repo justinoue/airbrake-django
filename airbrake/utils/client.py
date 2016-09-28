@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.core.urlresolvers import resolve
 import sys
-import six.moves.urllib
+from six.moves import urllib
 import traceback
 from lxml import etree
 
